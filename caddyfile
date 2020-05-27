@@ -1,0 +1,4 @@
+localhost:8080
+
+file_server
+rewrite /syntax /syntax.html

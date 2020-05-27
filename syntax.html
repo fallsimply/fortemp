@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Syntax | ForTem</title>
+        <link rel="stylesheet" href="syntax.css">
+    </head>
+    <body>
+        <a href="/">
+            <h2 withTitle>Back to ForTem</h2>
+        </a>
+
+        <section id="toc">
+            <h2>Table Of Contents</h2>
+            <nav>
+                <a href="#syntax">Syntax</a>
+                <a href="#examples">Examples</a>
+                <a href="#vars">Variables</a>
+            </nav>
+        </section>
+
+        <section id="syntax">
+            <h2>Basic Syntax</h2>
+            <p>ForTemp uses <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">ES6/ES2015 Template Literals</a><br>
+            Normal Template Literals look like this <code>`Hello ${name}!!!`</code><br>
+            Let's Break This down!!!<br>
+            <ul>
+                <li><code>``</code> - the back ticks mark a template literal (ForTem handles this for you)</li>
+                <li><code>${name}</code> - the text inside the <code>${}</code> is the name of a variable to put in the string</li>
+                <li><code>Hello ${name}!!!</code> - everyting outside the <code>${}</code> is returned along the new text in the output</li>
+            </ul>
+        </section>
+
+        <section id="examples">
+            <h2>Syntax Examples</h2>
+            <div withTitle>
+                <h3>Template</h3>
+                <p>
+                    <code>Hello ${name}!</code>
+                </p>
+                <h3>Data</h3>
+                <p>
+                    <code>name = "World"</code>
+                </p>
+                <h3>Output</h3>
+                <p>
+                    <code>Hello World!</code>
+                </p>
+            </div>
+        </section>
+
+        <h2 id="vars" class="title">Variables</h2>
+        <table>
+            <thead>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>i</td>
+                    <td>Index</td>
+                </tr>
+                <tr>
+                    <td>val</td>
+                    <td>Text</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

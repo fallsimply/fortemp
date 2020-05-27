@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+  --	hi, 
+  --	hello,
+  --	howdy
+  -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ForTem</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<main>
+			<section>
+				<h2 class="template">Template (template literal syntax) <a href="/syntax" noFocusRing><svg fill="currentcolor"><use xlink:href="icons.svg#info"/></svg></a></h2>
+				<input type="text" name="tempate" id="tmpl">
+			</section>
+
+			<section>
+				<h2>Options</h2>
+				<div options>
+					<h3>Start At</h3>
+					<div class="numberInput">
+						<input type="text" inputmode="numeric" pattern="[0-9]*" name="start" id="start" value="1">
+						<button class="up" ripple> + </button>
+						<button class="down" ripple> - </button>
+					</div>
+
+					<h3 title="Multiplier for iterator">Step</h3>
+					<div class="numberInput">
+						<input type="text" inputmode="numeric" pattern="[0-9]*" name="step" id="step" value="1">
+						<button class="up" ripple> + </button>
+						<button class="down" ripple> - </button>
+					</div>
+					
+					<h3 title="Seperate Sets of Output by em">Gap (Tool Only)</h3>
+					<div class="numberInput">
+						<input type="text" inputmode="numeric" pattern="[0-9]*" name="gap" id="gap" value="0.5">
+						<button class="up" ripple> + </button>
+						<button class="down" ripple> - </button>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Input (Comma Seperated items)</h2>
+				<textarea name="id" id="in"></textarea>
+				<button class="run" ripple>Run</button>
+			</section>
+
+			<section column="2" row-span="3" class="out">
+				<h2>Output</h2>
+				<div class="output"></div>
+			</section>
+		</main>
+		<!-- hi, hey, hello, howdy -->
+		<script src="./index.js"></script>
+	</body>
+</html>
