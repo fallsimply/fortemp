@@ -15,6 +15,9 @@ table, td
 	border: 2px solid #fff
 	border-collapse: collapse
 
+thead
+	background hsla(0, 0%, 100%, .25)
+
 a[href*="developer.mozilla.org"]::after
 	content: " (More on MDN)"
 
@@ -42,17 +45,13 @@ ul > li
 p
 	line-height: 1.5
 
-section#toc nav
+section#toc ul
 	padding: 0 2em
 	line-height: 1.5
+	margin: 0
 	a
 		display: block
 		text-decoration: none
 		font-weight: bold
-	a::before
-		content: "•"
-		width: 1rem
-		display: inline-block
 	a::after
 		content: " (" attr(href) ")"
-		text-decoration: none
