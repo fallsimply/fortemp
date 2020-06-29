@@ -1,0 +1,10 @@
+{
+  "name": "fortemp",
+  "scripts": {
+    "build": "stylus -c styl/ -o \"public/css/\"",
+    "watch:styl": "stylus -w -c styl/ -o \"public/css/\""
+  },
+  "repository": "fallsimply/fortemp",
+  "author": "fall simply <simply@fallproject.org>",
+  "license": "MIT"
+}

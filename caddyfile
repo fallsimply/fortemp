@@ -1,4 +1,5 @@
-localhost:8080
+localhost:80
 
-file_server
+root public 
+file_server browse
 rewrite /syntax /syntax.html
